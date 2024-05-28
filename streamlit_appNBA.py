@@ -48,7 +48,8 @@ average_points_per_player = average_points_per_player.sort_values()
 
 # Criar um gráfico de barras com os jogadores no eixo x e a média de pontos no eixo y
 plt.figure(figsize=(8, 12))
-plt.barh(average_points_per_player.index, average_points_per_player.values)
+
+plt.barh(average_points_per_player.index, average_points_per_player.values, color='black')
 plt.xlabel('Média de Pontos')
 plt.title(f'Média de Pontos por Jogador (Draft de {draft_year})')
 plt.grid(True)
@@ -58,6 +59,7 @@ plt.barh(selected_player, average_points_per_player[selected_player], color='red
 
 # Exibir o gráfico
 st.pyplot(plt.gcf())
+
 player_data = df[df['player_name'] == selected_player]
 
 average_points = player_data['pts'].mean()
