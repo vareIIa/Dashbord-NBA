@@ -1,3 +1,3 @@
-# 🏀 US NBA Dashboard 
+# 🏀 NBA DASHBOARD
 
-streamlit run streamlit_appNBA.py // Para acessar a Dashboard #
+# Use streamlit run streamlit_appNBA.py // Para acessar a Dashboard 
